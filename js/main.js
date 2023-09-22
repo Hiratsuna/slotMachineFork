@@ -9,6 +9,7 @@ window.onload = function() {
   var playSound = new Audio("mp3/playSound.mp3");
   var clickerSound = new Audio("mp3/clickerSound.mp3");
   var failSound = new Audio("mp3/failSound.mp3");
+  var successSound = new Audio("mp3/successSound.mp3");
 
   var column1XPosition = $(canvas).width()/4;
   var column2XPosition = $(canvas).width()/1.5;
@@ -123,6 +124,11 @@ window.onload = function() {
   for (var i = 0; i < rasterList3.length; i++) {
     group5.addChild(rasterList3[i]);
   }
+
+  var group = group.clone();
+ 
+  group.position.y = -(group.bounds["height"] / 2) - (group.bounds["height"] / 2);
+  group.position.x = column1XPosition;
 
   group.position.y = 0 - (group.bounds["height"] / 2);
   group.position.x = column1XPosition;
@@ -374,7 +380,6 @@ window.onload = function() {
         topLineResults.push(resultArray[i].name);
       }
 
-
       if (resultArray[i].position === 300) {
         middleLineResults.push(resultArray[i].name);
       }
@@ -389,16 +394,24 @@ window.onload = function() {
     console.log("The bottom line results: " + bottomLineResults);
 
     setTimeout(function() {
-      alert('Results are in the console');
+      
     }, 1200)
 
-    if (middleLineResults[0] != middleLineResults[1]) {
+    if 
+    ((middleLineResults[0] == middleLineResults[1]) && (middleLineResults[1] == middleLineResults[2]) ||
+    (bottomLineResults[0] == bottomLineResults[1]) && (bottomLineResults[1] == bottomLineResults[2]) ||
+    (topLineResults[0] == topLineResults[1]) && (topLineResults[1] == topLineResults[2]))
+      {
+      successSound.play();
+      } else {
       failSound.play();
+      }
     }
   }
 
 
   function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
+    return Math.random();
   }
-};
+;
+
