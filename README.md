@@ -7,12 +7,12 @@ Original Author: Nicholas Kyriakides(@nicholaswmin)
 
 
 # Jerry's change ideas: 
-- [ ] remove the console message popup, cause its annoying
+- [x] remove the console message popup, cause its annoying
 - [ ] make the slots stop spinning when the button is pushed while it spins
 - [ ] a line of the same image triggers a gif animation
-- [ ] change all the images
+- [x] change all the images
 - [x] change all the sounds
 - [ ] make a whole line trigger a discord message saying something
 - [ ] ask for user input for their twitch id and display it in the discord message
-- [ ] add a sucess function and success sound
-- [ ] add success logic 
+- [x] add a sucess function and success sound
+- [x] add success logic 
