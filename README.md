@@ -11,6 +11,6 @@ Original Author: Nicholas Kyriakides(@nicholaswmin)
 - [ ] make the slots stop spinning when the button is pushed while it spins
 - [ ] a line of the same image triggers a gif animation
 - [ ] change all the images
-- [ ] change all the sounds
+- [x] change all the sounds
 - [ ] make a whole line trigger a discord message saying something
 - [ ] ask for user input for their twitch id and display it in the discord message
