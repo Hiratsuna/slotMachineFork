@@ -14,3 +14,5 @@ Original Author: Nicholas Kyriakides(@nicholaswmin)
 - [x] change all the sounds
 - [ ] make a whole line trigger a discord message saying something
 - [ ] ask for user input for their twitch id and display it in the discord message
+- [ ] add a sucess function and success sound
+- [ ] add success logic 
